@@ -9,4 +9,8 @@ projectsRouter.route('/')
   .post(projectsController.create)
 ;
 
+projectsRouter.route('/:id')
+  .put(projectsController.update)
+;
+
 module.exports = projectsRouter
